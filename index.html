@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <div class="wrapper">
+        <header class="header">
+
+            <div class="header__nav-menu">
+                <button class="hamburger"><img src="./images/icon-menu.svg" alt="icon-menu">
+                </button>
+               
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="logo">
+                </div>
+                 
+                <ul class="header__menu">
+                    <li>
+                        <button class="close-btn"><img src="./images/icon-close.svg" alt="icon-close">
+                </button>
+                    </li>
+                    <li>
+                        <a href="#">Collections</a>
+                    </li>
+                    <li>
+                        <a href="#">Men</a>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="header__cart-container">
+                <p class="caption">Cart</p>
+                <hr>
+                <p class="msg">Your cart is empty</p>
+            </div>
+
+            <div class="header__cart-btn">
+                <button class="cart">
+                  <img src="./images/icon-cart.svg" alt="icon-cart">
+                  <span class="amount">0</span>
+                </button>
+                <a href="#" class="avatar">
+                    <img src="./images/image-avatar.png" alt="avatar">
+                </a>
+            </div>
+
+        </header>
+
+        <main class="hero container">
+
+            <div class="hero__img">
+                <div class="slider">
+
+                    <button class="icon-close-modal">               
+                        <img  src="./images/icon-close-modal.svg" alt="icon-close">
+                    </button>
+
+                    <div class="slider__wrapper">
+                        <img onmouseover="activeSlide(0)" src="./images/image-product-1.jpg" alt="product-1">
+                        <img onmouseover="activeSlide(1)" src="./images/image-product-2.jpg" alt="product-2">
+                        <img onmouseover="activeSlide(2)" src="./images/image-product-3.jpg" alt="product-3">
+                        <img onmouseover="activeSlide(3)" src="./images/image-product-4.jpg" alt="product-4">
+                    </div>
+                </div>
+                <div class="slider__thumbnail">
+                    <img onclick="change(0)" src="./images/image-product-1-thumbnail.jpg" alt="product-1-thumbnail">
+                    <img onclick="change(1)" src="./images/image-product-2-thumbnail.jpg" alt="product-2-thumbnail">
+                    <img onclick="change(2)" src="./images/image-product-3-thumbnail.jpg" alt="product-3-thumbnail">
+                    <img onclick="change(3)" src="./images/image-product-4-thumbnail.jpg" alt="product-4-thumbnail">
+                </div>
+                <button class="previous">
+                  <img src="./images/icon-previous.svg" alt="previous">
+                </button>
+                <button class="next">
+                   <img src="./images/icon-next.svg" alt="next">
+                 </button>
+            </div>
+
+            <div class="hero__content">
+                <p class="product-name">Sneaker Company</p>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="prices">
+                    <div class="discount">
+                        <p class="new">$125.00</p>
+                        <span>50%</span>
+                    </div>
+                    <div class="old">
+                        <p>$250.00</p>
+                    </div>
+                </div>
+                <div class="hero__add-sub-btn">
+                    <div class="add-sub">
+                        <button>
+                    <img class="minus" src="./images/icon-minus.svg" alt="icon-minus">
+                  </button>
+                        <p class="count">0</p>
+                        <button>
+                    <img class="plus" src="./images/icon-plus.svg" alt="icon-minus">
+                  </button>
+                    </div>
+                    <button id="addition" class="btn">
+                    <img class="cart-btn" src="./images/icon-cart-btn.svg" alt="icon-btn">
+                    Add to cart</button>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Beka Esaly</a>.
+    </div>
+</body>
+
+</html>
