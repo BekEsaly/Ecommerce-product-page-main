@@ -296,7 +296,7 @@ transition: 300ms all;
     
     .slider__wrapper img {
         width: 25rem;
-        transition: 300ms all;
+        transition: 0.03s all;
     }
 
     .slider__thumbnail {
